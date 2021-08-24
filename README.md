@@ -28,3 +28,22 @@ preprocessed
     [['hello', 'world'], ['NLP', 'fun'], ['-PRON-', 'work', 'bank']]
 
 
+
+## Stemming
+
+```python
+documents =  ["Hello world", "NLP is fun", "We work at the bank"]
+text = Preprocess(documents)
+preprocessed = text.stemming()
+```
+
+```python
+preprocessed
+```
+
+
+
+
+    [['hello', 'world'], ['nlp', 'fun'], ['we', 'work', 'bank']]
+
+

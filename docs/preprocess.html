@@ -35,7 +35,19 @@ nb_path: "00_preprocess.ipynb"
 <div class="output_markdown rendered_html output_subarea ">
 <h4 id="Preprocess.lemmatize" class="doc_header"><code>Preprocess.lemmatize</code><a href="https://github.com/Sylvia9628/test_nbdev/tree/master/test_nbdev/preprocess.py#L18" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>Preprocess.lemmatize</code>()</p>
 </blockquote>
-<p><code>Returns stemmed or lemmatized documents with punctuation and stopwords removed</code></p>
+<p><code>Returns lemmatized documents with punctuation and stopwords removed</code></p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="Preprocess.stemming" class="doc_header"><code>Preprocess.stemming</code><a href="https://github.com/Sylvia9628/test_nbdev/tree/master/test_nbdev/preprocess.py#L37" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>Preprocess.stemming</code>()</p>
+</blockquote>
+<p><code>Returns stemmed documents with punctuation and stopwords removed</code></p>
 
 </div>
 
@@ -91,7 +103,19 @@ nb_path: "00_preprocess.ipynb"
 <div class="output_markdown rendered_html output_subarea ">
 <h4 id="Preprocess.lemmatize" class="doc_header"><code>Preprocess.lemmatize</code><a href="__main__.py#L6" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>Preprocess.lemmatize</code>()</p>
 </blockquote>
-<p><code>Returns stemmed or lemmatized documents with punctuation and stopwords removed</code></p>
+<p><code>Returns lemmatized documents with punctuation and stopwords removed</code></p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="Preprocess.stemming" class="doc_header"><code>Preprocess.stemming</code><a href="__main__.py#L25" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>Preprocess.stemming</code>()</p>
+</blockquote>
+<p><code>Returns stemmed documents with punctuation and stopwords removed</code></p>
 
 </div>
 
@@ -112,6 +136,24 @@ nb_path: "00_preprocess.ipynb"
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="n">Preprocess</span><span class="p">([</span><span class="s2">&quot;Anne lives in Spain!&quot;</span><span class="p">])</span>
 <span class="n">test_eq</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">lemmatize</span><span class="p">(),[[</span><span class="s2">&quot;Anne&quot;</span><span class="p">,</span> <span class="s2">&quot;live&quot;</span><span class="p">,</span><span class="s2">&quot;Spain&quot;</span><span class="p">]])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="n">Preprocess</span><span class="p">([</span><span class="s2">&quot;Anne lives in Spain!&quot;</span><span class="p">])</span>
+<span class="n">test_eq</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">stemming</span><span class="p">(),[[</span><span class="s2">&quot;ann&quot;</span><span class="p">,</span> <span class="s2">&quot;live&quot;</span><span class="p">,</span><span class="s2">&quot;spain&quot;</span><span class="p">]])</span>
 </pre></div>
 
     </div>

@@ -113,6 +113,64 @@ nb_path: "index.ipynb"
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Stemming">Stemming<a class="anchor-link" href="#Stemming"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">documents</span> <span class="o">=</span>  <span class="p">[</span><span class="s2">&quot;Hello world&quot;</span><span class="p">,</span> <span class="s2">&quot;NLP is fun&quot;</span><span class="p">,</span> <span class="s2">&quot;We work at the bank&quot;</span><span class="p">]</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">Preprocess</span><span class="p">(</span><span class="n">documents</span><span class="p">)</span>
+<span class="n">preprocessed</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">stemming</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">preprocessed</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[[&#39;hello&#39;, &#39;world&#39;], [&#39;nlp&#39;, &#39;fun&#39;], [&#39;we&#39;, &#39;work&#39;, &#39;bank&#39;]]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 
