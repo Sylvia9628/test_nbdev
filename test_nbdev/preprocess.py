@@ -43,6 +43,7 @@ class Preprocess:
         nlp = spacy.load('en_core_web_sm')
 
         for document in self.documents:
+
             preprocessed_text = []
             document = re.sub(r'[^\w\d\s\']+', '', document)
             doc = nlp(document)
