@@ -12,13 +12,13 @@ This file will become your README and also the index of your documentation.
 
 ### Lemmatize
 
-```
+```python
 documents =  ["Hello world", "NLP is fun", "We work at the bank"]
 text = Preprocess(documents)
 preprocessed = text.lemmatize()
 ```
 
-```
+```python
 preprocessed
 ```
 
